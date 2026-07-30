@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bautizo de Naomi Nicolle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars"></div>
+    
+    <div class="container">
+        <!-- Header con unicornio -->
+        <div class="header">
+            <div class="unicorn">🦄</div>
+            <h1 class="title">Bautizo de</h1>
+            <h2 class="baby-name">Naomi Nicolle</h2>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="content">
+            <!-- Información del evento -->
+            <section class="event-section">
+                <div class="event-card">
+                    <div class="event-icon">⛪</div>
+                    <h3>Ceremonia Religiosa</h3>
+                    <p class="date">14 de Noviembre de 2026</p>
+                    <p class="time">2:00 PM</p>
+                    <p class="location"><strong>Parroquia Santa María de los Apóstoles</strong></p>
+                    <p class="address">Calle Coscomate 120<br>Bosques de Tetlamella<br>Coyoacán, CP 04730<br>CDMX</p>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-icon">🎉</div>
+                    <h3>Recepción</h3>
+                    <p class="date">14 de Noviembre de 2026</p>
+                    <p class="time">4:00 PM</p>
+                    <p class="location"><strong>Jardín Campestre</strong></p>
+                    <p class="address">Camino Público 8<br>Colonia Plan de Ayala<br>Tlalpan, CDMX</p>
+                </div>
+            </section>
+
+            <!-- Información de los papás y padrino -->
+            <section class="family-section">
+                <div class="family-card">
+                    <h3>Mamá</h3>
+                    <p>Beatriz Adriana Jiménez</p>
+                </div>
+                <div class="family-card">
+                    <h3>Padrino</h3>
+                    <p>Bruno Israel Mendoza Jiménez</p>
+                </div>
+            </section>
+
+            <!-- Formulario RSVP -->
+            <section class="rsvp-section">
+                <h3>Confirma tu Asistencia</h3>
+                <form id="rsvpForm" class="rsvp-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    <div class="form-group">
+                        <label for="asistencia">¿Asistirás?</label>
+                        <select id="asistencia" name="asistencia" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="si">Sí, asistiré</option>
+                            <option value="no">No podré asistir</option>
+                            <option value="quiz">Quizás</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="personas">Número de personas</label>
+                        <input type="number" id="personas" name="personas" min="1" value="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje (opcional)</label>
+                        <textarea id="mensaje" name="mensaje" rows="3" placeholder="Escribe tus mejores deseos..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar Confirmación</button>
+                </form>
+                <div id="successMessage" class="success-message" style="display:none;">
+                    ✨ ¡Gracias por confirmar tu asistencia! ✨
+                </div>
+            </section>
+
+            <!-- Mensaje especial -->
+            <section class="message-section">
+                <p class="message-text">
+                    Te invitamos a compartir este momento especial en la vida de nuestra pequeña Naomi Nicolle.
+                    <br><br>
+                    <em>"Que los ángeles de Dios cuiden y protejan a nuestra bebé"</em>
+                </p>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>¡Que Dios bendiga a Naomi Nicolle! 🦄✨</p>
+        </div>
+    </div>
+
+    <!-- Audio de fondo -->
+    <audio id="backgroundMusic" loop>
+        <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_d73204ee81.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
